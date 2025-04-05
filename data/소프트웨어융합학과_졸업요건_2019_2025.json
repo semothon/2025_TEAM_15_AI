@@ -1,0 +1,121 @@
+{
+  "소프트웨어융합학과2019": {
+    "total_credits": 140,
+    "major_credits_required": 96,
+    "foundation_credits": 18,
+    "major_required_credits": 45,
+    "major_elective_credits": 33,
+    "industry_required_credits": 18,
+    "required_courses": [
+      "캡스톤디자인",
+      "졸업프로젝트",
+      "졸업논문(소프트웨어융합학과)"
+    ],
+    "english_required": {
+      "regular": 3,
+      "transfer": 1
+    }
+  },
+  "소프트웨어융합학과2020": {
+    "total_credits": 140,
+    "major_credits_required": 96,
+    "foundation_credits": 18,
+    "major_required_credits": 45,
+    "major_elective_credits": 33,
+    "industry_required_credits": 18,
+    "required_courses": [
+      "캡스톤디자인",
+      "졸업프로젝트",
+      "졸업논문(소프트웨어융합학과)"
+    ],
+    "english_required": {
+      "regular": 3,
+      "transfer": 1
+    }
+  },
+  "소프트웨어융합학과2021": {
+    "total_credits": 140,
+    "major_credits_required": 96,
+    "foundation_credits": 18,
+    "major_required_credits": 48,
+    "major_elective_credits": 30,
+    "industry_required_credits": 18,
+    "required_courses": [
+      "캡스톤디자인",
+      "졸업프로젝트",
+      "졸업논문(소프트웨어융합학과)"
+    ],
+    "english_required": {
+      "regular": 3,
+      "transfer": 1
+    }
+  },
+  "소프트웨어융합학과2022": {
+    "total_credits": 140,
+    "major_credits_required": 96,
+    "foundation_credits": 18,
+    "major_required_credits": 48,
+    "major_elective_credits": 30,
+    "industry_required_credits": 18,
+    "required_courses": [
+      "캡스톤디자인",
+      "졸업프로젝트",
+      "졸업논문(소프트웨어융합학과)"
+    ],
+    "english_required": {
+      "regular": 3,
+      "transfer": 1
+    }
+  },
+  "소프트웨어융합학과2023": {
+    "total_credits": 140,
+    "major_credits_required": 93,
+    "foundation_credits": 18,
+    "major_required_credits": 45,
+    "major_elective_credits": 30,
+    "industry_required_credits": 18,
+    "required_courses": [
+      "캡스톤디자인",
+      "졸업프로젝트",
+      "졸업논문(소프트웨어융합학과)"
+    ],
+    "english_required": {
+      "regular": 3,
+      "transfer": 1
+    }
+  },
+  "소프트웨어융합학과2024": {
+    "total_credits": 130,
+    "major_credits_required": 87,
+    "foundation_credits": 15,
+    "major_required_credits": 45,
+    "major_elective_credits": 27,
+    "industry_required_credits": 15,
+    "required_courses": [
+      "캡스톤디자인",
+      "졸업프로젝트",
+      "졸업논문(소프트웨어융합학과)"
+    ],
+    "english_required": {
+      "regular": 3,
+      "transfer": 1
+    }
+  },
+  "소프트웨어융합학과2025": {
+    "total_credits": 130,
+    "major_credits_required": 88,
+    "foundation_credits": 15,
+    "major_required_credits": 37,
+    "major_elective_credits": 36,
+    "industry_required_credits": 15,
+    "required_courses": [
+      "캡스톤디자인",
+      "졸업프로젝트",
+      "졸업논문(소프트웨어융합학과)"
+    ],
+    "english_required": {
+      "regular": 3,
+      "transfer": 1
+    }
+  }
+}

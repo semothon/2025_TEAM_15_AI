@@ -1,0 +1,20 @@
+{
+    "컴퓨터공학과": {
+      "total_credits": 140,
+      "major_credits_required": 81,
+      "foundation_credits": 18,
+      "major_required_credits": 45,
+      "major_elective_credits": 18,
+      "industry_required_credits": 12,
+      "required_courses": [
+        "캡스톤디자인",
+        "졸업프로젝트",
+        "졸업논문(컴퓨터공학)"
+      ],
+      "english_required": {
+        "regular": 3,
+        "transfer": 1
+      }
+    }
+  }
+  

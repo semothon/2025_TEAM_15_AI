@@ -1,4 +1,4 @@
-from fastapi import FastAPI, UploadFile, File, Form
+from fastapi import FastAPI, UploadFile, File, Query, Form
 from pydantic import BaseModel
 from fastapi.responses import JSONResponse
 from typing import List, Optional, Union
@@ -8,8 +8,9 @@ import json
 from utils.time.image_parser import get_schedule_mask
 from utils.time.visualize import visualize_free_mask
 from utils.grad.analyzer import analyze_graduation_pdf
+from utils.grad.pdf_parser import parse_pdf
 import numpy as np
-
+from typing import Dict, Any
 # 환경 변수 로딩
 load_dotenv()
 client = OpenAI()
@@ -50,16 +51,6 @@ class ChatResponse(BaseModel):
     question: str
     ai_add_response: str
 
-class DeficiencyItem(BaseModel):
-    항목: str
-    부족_내용: str
-    보완_방법: str
-
-class GraduationResult(BaseModel):
-    졸업_가능: bool
-    부족_항목: Optional[List[DeficiencyItem]]
-    종합_의견: str
-    검증_부족항목: Optional[List[str]] = None
 ##### 과목 추천 #####
 @app.post("/recommend", response_model=Union[RecommendResponse, ErrorResponse])
 async def recommend(request: RecommendRequest):
@@ -182,41 +173,173 @@ async def chat(req: ChatRequest):
             status_code=500
         )
 
+import os
+import shutil
 
-from fastapi import UploadFile, File, Query
-from fastapi.responses import JSONResponse
+class AnalyzePdfResponse(BaseModel):
+    responseData: Dict[str, Any]
 
-@app.post("/analyze-pdf")
+@app.post("/analyze-pdf", response_model=AnalyzePdfResponse)
 async def analyze_pdf(
-    major: str = Query(..., description="학과"),
-    student_id: str = Query(..., description="학번"),
-    file: UploadFile = File(...)
+    file: UploadFile = File(..., description="졸업 진단표 PDF 파일"),
+    department: str = Form(..., description="학과명"),
+    studentId: str = Form(..., description="학번")
 ):
-    result = await analyze_graduation_pdf(file, major, student_id)
-    return {"result": result}
+    try:
+        # 1. 파일 형식 확인
+        if file.content_type != "application/pdf":
+            return AnalyzePdfResponse(responseData={
+                "error": "PDF 파일만 업로드 가능합니다.",
+                "fileName": file.filename
+            })
 
+        # 2. 파일 내용 읽기
+        content = await file.read()
 
+        # 3. 졸업 진단 실행
+        result = await analyze_graduation_pdf(content, department, studentId)
+
+        # 4. 분석 결과 감싸기
+        if isinstance(result, dict):
+            analysis_result = result
+        else:
+            analysis_result = {"result": result}
+
+        # 5. 공통 메타 정보 + 분석 결과 포함
+        return AnalyzePdfResponse(responseData={
+            "studentId": studentId,
+            "department": department,
+            "fileName": file.filename,
+            "message": "FastAPI 업로드 및 졸업 진단 성공 ✅",
+            "analysis": analysis_result
+        })
+
+    except Exception as e:
+        return AnalyzePdfResponse(responseData={
+            "error": f"서버 오류: {str(e)}"
+        })
 ##### 공강 시간표 #####
+
+import cv2
+import numpy as np
+import pytesseract
+import re
+import os
+from fastapi import FastAPI, UploadFile, File
+from fastapi.responses import FileResponse
+from tempfile import NamedTemporaryFile
+pytesseract.pytesseract.tesseract_cmd = "/opt/homebrew/bin/tesseract"
+
+# ✅ 전처리 함수: 크기 조절 + ROI 추출
+def preprocess_and_resize(img):
+    large = cv2.resize(img, None, fx=1.5, fy=1.5, interpolation=cv2.INTER_CUBIC)
+    rgb = cv2.pyrDown(large)
+    gray = cv2.cvtColor(rgb, cv2.COLOR_BGR2GRAY)
+    gray = cv2.medianBlur(gray, 3)
+
+    kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (2, 2))
+    grad = cv2.morphologyEx(gray, cv2.MORPH_GRADIENT, kernel)
+    _, bw = cv2.threshold(grad, 0, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)
+    connected = cv2.morphologyEx(bw, cv2.MORPH_CLOSE, cv2.getStructuringElement(cv2.MORPH_RECT, (2, 1)))
+
+    contours, _ = cv2.findContours(connected.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+
+    six_y = None
+    for cnt in contours:
+        x, y, w, h = cv2.boundingRect(cnt)
+        if w < 5 or h < 10:
+            continue
+
+        pad = 2
+        x_pad = max(x - pad, 0)
+        y_pad = max(y - pad, 0)
+        w_pad = min(w + pad * 2, rgb.shape[1] - x_pad)
+        h_pad = min(h + pad * 2, rgb.shape[0] - y_pad)
+
+        roi = gray[y_pad:y_pad + h_pad, x_pad:x_pad + w_pad]
+        roi_resized = cv2.resize(roi, None, fx=2.0, fy=2.0, interpolation=cv2.INTER_CUBIC)
+        text = pytesseract.image_to_string(roi_resized, config='--psm 10 -c tessedit_char_whitelist=0123456789').strip()
+
+        if text == '6':
+            six_y = y_pad
+
+    cutoff_y = six_y + 80 if six_y is not None else rgb.shape[0]
+    cropped = rgb[:cutoff_y, :]
+    resized = cv2.resize(cropped, (787, 1420), interpolation=cv2.INTER_AREA)
+    return resized
+
+# ✅ 공통 공강 마스크 생성 및 하이라이팅
+def find_common_free_slots(img1, img2, start_x=40, start_y=36, end_x=787, end_y=1420):
+    region1 = img1[start_y:end_y, start_x:end_x]
+    region2 = img2[start_y:end_y, start_x:end_x]
+
+    # 비어있는 시간 = 밝은 색 (흰색 or 회색 계열)
+    mask1 = ((region1 == [17, 17, 17]).all(axis=2)) | ((region1 == [255, 255, 255]).all(axis=2))
+    mask2 = ((region2 == [17, 17, 17]).all(axis=2)) | ((region2 == [255, 255, 255]).all(axis=2))
+    common_mask = mask1 & mask2
+
+    region1[common_mask] = [0, 255, 255]  # 노란색으로 공강 표시
+    region2[common_mask] = [0, 255, 255]
+
+    img1[start_y:end_y, start_x:end_x] = region1
+    img2[start_y:end_y, start_x:end_x] = region2
+    return img1, img2
+
+# ✅ FastAPI 엔드포인트
 @app.post("/timetable")
-async def analyze_schedule_image(files: list[UploadFile]):
-    masks = []
+async def highlight_timetables(
+    file1: UploadFile = File(...),
+    file2: UploadFile = File(...)
+):
+    try:
+        # 1. 임시 파일 저장
+        temp1 = NamedTemporaryFile(delete=False, suffix=".jpg")
+        temp2 = NamedTemporaryFile(delete=False, suffix=".jpg")
+        temp1.write(await file1.read())
+        temp2.write(await file2.read())
+        temp1.close()
+        temp2.close()
 
-    for file in files:
-        save_path = f"AI/data/시간표/{file.filename}"
-        with open(save_path, "wb") as f:
-            f.write(await file.read())
+        # 2. 이미지 로딩
+        img1 = cv2.imread(temp1.name)
+        img2 = cv2.imread(temp2.name)
 
-        mask = get_schedule_mask(save_path)
-        masks.append(mask)
+        if img1 is None or img2 is None:
+            return JSONResponse(status_code=400, content={
+                "resultCode": "ERROR",
+                "message": "이미지 로드 실패. JPEG 형식인지 확인해주세요.",
+                "data": None
+            })
 
-    # 공강 마스크 계산 (모두 수업 없을 때만 공강)
-    combined = np.stack(masks, axis=0)
-    free_mask = np.all(combined == 0, axis=0)
+        # 3. 전처리 및 공강 분석
+        processed1 = preprocess_and_resize(img1)
+        processed2 = preprocess_and_resize(img2)
+        highlighted1, highlighted2 = find_common_free_slots(processed1.copy(), processed2.copy())
 
-    result_path = "AI/data/공통공강22.png"
-    visualize_free_mask(free_mask, result_path)
+        # 4. 결과 저장 디렉토리
+        result_dir = "output"
+        os.makedirs(result_dir, exist_ok=True)
 
-    return {
-        "message": "공강 시각화 완료",
-        "image": result_path
-    }
+        # 5. 저장 경로 생성
+        out_path1 = os.path.join(result_dir, f"highlighted_{file1.filename}")
+        out_path2 = os.path.join(result_dir, f"highlighted_{file2.filename}")
+
+        cv2.imwrite(out_path1, highlighted1)
+        cv2.imwrite(out_path2, highlighted2)
+
+        # 6. 스프링에 맞는 응답 구조
+        return {
+            "resultCode": "SUCCESS",
+            "message": "공통 공강 시각화 완료",
+            "data": {
+                "highlightedTimetable1": out_path1,
+                "highlightedTimetable2": out_path2
+            }
+        }
+
+    except Exception as e:
+        return JSONResponse(status_code=500, content={
+            "resultCode": "ERROR",
+            "message": f"FastAPI 처리 오류: {str(e)}",
+            "data": None
+        })

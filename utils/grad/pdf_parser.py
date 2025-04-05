@@ -68,19 +68,19 @@ def parse_pdf(file_bytes: bytes) -> dict:
             "category": category,
             "mark": (mark or "").strip().lower(),
         })
-    # 편입인정학점 추출 (이수구분코드와 함께)
-    transfer_pattern = re.compile(r"(\d{2})\s+편입인정학점\s+(\d+)")
-    for match in transfer_pattern.finditer(full_text):
-        group_code, credits = match.groups()
-        result["courses"].append({
-            "code": "편입",
-            "name": "편입인정학점",
-            "credits": int(credits),
-            "semester": "",
-            "category": "편입",
-            "mark": "",
-            "group_code": group_code  # 중요
-        })
+    # # 편입인정학점 추출 (이수구분코드와 함께)
+    # transfer_pattern = re.compile(r"(\d{2})\s+편입인정학점\s+(\d+)")
+    # for match in transfer_pattern.finditer(full_text):
+    #     group_code, credits = match.groups()
+    #     result["courses"].append({
+    #         "code": "편입",
+    #         "name": "편입인정학점",
+    #         "credits": int(credits),
+    #         "semester": "",
+    #         "category": "편입",
+    #         "mark": "",
+    #         "group_code": group_code  # 중요
+    #     })
 
 
     return result

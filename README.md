@@ -53,29 +53,23 @@
 
 <br>
 
-## 🔧 Frontend Development
-
-<img src="https://drive.google.com/uc?id=1IWIKrc-pRCDMB3wws-T0hmTtXNfdv_W4" width=65%>
-
-<br>
-
 
 ## ▶️ How to Run
 
 ```
-git clone https://github.com/semothon/2025_TEAM_15_FE.git
+git clone https://github.com/semothon/2025_TEAM_15_AI.git
 ```
 
 ```
-cd 2025_TEAM_15_FE
+cd 2025_TEAM_15_AI
 ```
 
 ```
-npm install
+pip install -r requirements.txt
 ```
 
 ```
-npm run dev
+uvicorn main:app --reload
 ```
 
 <br>

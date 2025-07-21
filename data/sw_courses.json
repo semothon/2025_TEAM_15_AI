@@ -1,0 +1,1745 @@
+[
+  {
+    "name": "미분방정식",
+    "code": "AMTH1001",
+    "credit": 3,
+    "year": 1,
+    "semester": [
+      1
+    ],
+    "category": "전공기초",
+    "department": "소프트웨어융합학과",
+    "description": "일반적인 선형 미분방정식의 해와 응용, 라플라스 변환, 급수 해법 등을 다루며 공학 및 과학 문제 해결에 필요한 기본적인 수학 지식을 습득한다.",
+    "keywords": [
+      "미분방정식",
+      "라플라스변환",
+      "급수해법",
+      "응용수학",
+      "공학기초"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "선형대수",
+    "code": "AMTH1004",
+    "credit": 3,
+    "year": 1,
+    "semester": [
+      1
+    ],
+    "category": "전공기초",
+    "department": "소프트웨어융합학과",
+    "description": "역행렬, 선형계, 행렬식, 내적, 벡터공간, 선형변환, 고유값과 고유벡터 등 선형대수학의 기초 개념과 응용을 학습한다.",
+    "keywords": [
+      "행렬",
+      "벡터공간",
+      "선형변환",
+      "고유값",
+      "대각화"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "미분적분학",
+    "code": "AMTH1009",
+    "credit": 3,
+    "year": 1,
+    "semester": [
+      1
+    ],
+    "category": "전공기초",
+    "department": "소프트웨어융합학과",
+    "description": "일변수 함수의 미분 및 적분 이론과 다변수 함수의 편미분을 포함한 기초 개념을 학습하고, 이를 다양한 분야에 응용하는 방법을 익힌다.",
+    "keywords": [
+      "미분",
+      "적분",
+      "편미분",
+      "함수",
+      "응용수학"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "물리학및실험1",
+    "code": "APHY1002",
+    "credit": 3,
+    "year": 1,
+    "semester": [
+      1
+    ],
+    "category": "전공기초",
+    "department": "소프트웨어융합학과",
+    "description": "기초 물리학 개념과 실험을 통해 물리 현상의 이해를 돕고, 컴퓨터공학에 필요한 물리적 기반 지식을 제공한다.",
+    "keywords": [
+      "물리학",
+      "실험",
+      "기초과학",
+      "이해력",
+      "응용"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "확률및랜덤변수",
+    "code": "EE211",
+    "credit": 3,
+    "year": 2,
+    "semester": [
+      1,
+      2
+    ],
+    "category": "전공기초",
+    "department": "소프트웨어융합학과",
+    "description": "확률 및 랜덤 변수 이론을 기반으로 통계 소프트웨어 활용과 컴퓨터공학 분야 응용을 위한 기초 확률 통계 지식을 습득한다.",
+    "keywords": [
+      "확률",
+      "랜덤변수",
+      "통계",
+      "응용수학",
+      "데이터분석"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "객체지향프로그래밍",
+    "code": "CSE103",
+    "credit": 3,
+    "year": 1,
+    "semester": [
+      1,
+      2
+    ],
+    "category": "전공필수",
+    "department": "소프트웨어융합학과",
+    "description": "객체지향 언어의 기초와 클래스, 상속, 다형성, 템플릿 등 고급 개념을 학습하고 실습을 통해 구현 능력을 향상시킨다.",
+    "keywords": [
+      "객체지향",
+      "클래스",
+      "상속",
+      "다형성",
+      "프로그래밍"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "자료구조",
+    "code": "CSE204",
+    "credit": 3,
+    "year": 2,
+    "semester": [
+      1,
+      2
+    ],
+    "category": "전공필수",
+    "department": "소프트웨어융합학과",
+    "description": "스택, 큐, 리스트, 트리, 그래프 등 다양한 자료구조와 이를 활용한 알고리즘 구현 방법을 학습한다.",
+    "keywords": [
+      "자료구조",
+      "리스트",
+      "트리",
+      "그래프",
+      "알고리즘"
+    ],
+    "prerequisite": "객체지향프로그래밍",
+    "track": ""
+  },
+  {
+    "name": "운영체제",
+    "code": "CSE301",
+    "credit": 3,
+    "year": 3,
+    "semester": [
+      1,
+      2
+    ],
+    "category": "전공필수",
+    "department": "소프트웨어융합학과",
+    "description": "운영체제의 역할과 기본 개념을 이해하고, 프로세스 관리, 메모리 관리, 파일 시스템, 동기화 문제 등을 다룬다.",
+    "keywords": [
+      "운영체제",
+      "프로세스",
+      "메모리",
+      "파일시스템",
+      "동기화"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "알고리즘",
+    "code": "CSE304",
+    "credit": 3,
+    "year": 3,
+    "semester": [
+      1,
+      2
+    ],
+    "category": "전공필수",
+    "department": "소프트웨어융합학과",
+    "description": "Divide and Conquer, 동적 계획법, 탐욕 알고리즘 등의 기법과 시간 복잡도 개념을 바탕으로 효율적인 알고리즘을 설계한다.",
+    "keywords": [
+      "알고리즘",
+      "분할정복",
+      "동적계획법",
+      "탐욕법",
+      "복잡도"
+    ],
+    "prerequisite": "자료구조",
+    "track": ""
+  },
+  {
+    "name": "데이터베이스",
+    "code": "CSE305",
+    "credit": 3,
+    "year": 3,
+    "semester": [
+      1,
+      2
+    ],
+    "category": "전공필수",
+    "department": "소프트웨어융합학과",
+    "description": "데이터베이스 시스템 구조, ER 모델, 관계형 데이터 모델과 트랜잭션, 동시성 제어 등 구현 기법을 학습한다.",
+    "keywords": [
+      "데이터베이스",
+      "ER모델",
+      "SQL",
+      "트랜잭션",
+      "관계형모델"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "소프트웨어공학",
+    "code": "CSE327",
+    "credit": 3,
+    "year": 3,
+    "semester": [
+      1,
+      2
+    ],
+    "category": "전공필수",
+    "department": "소프트웨어융합학과",
+    "description": "대형 소프트웨어 개발에서의 설계, 테스트, 비용 분석, 협업 방법론 등을 익히며 SW 개발 프로세스를 이해한다.",
+    "keywords": [
+      "소프트웨어공학",
+      "설계",
+      "테스트",
+      "개발모델",
+      "프로세스"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "최신기술콜로키움1",
+    "code": "CSE438",
+    "credit": 2,
+    "year": 2,
+    "semester": [
+      1
+    ],
+    "category": "전공필수",
+    "department": "소프트웨어융합학과",
+    "description": "정보기술 분야의 최신 동향 및 산업 현황을 전문가 초청 세미나를 통해 학습하고 진로를 탐색한다.",
+    "keywords": [
+      "세미나",
+      "최신기술",
+      "산업동향",
+      "진로탐색",
+      "융합"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "소프트웨어융합개론",
+    "code": "SWCON101",
+    "credit": 3,
+    "year": 1,
+    "semester": [
+      1
+    ],
+    "category": "전공필수",
+    "department": "소프트웨어융합학과",
+    "description": "SW융합의 개념과 사례, 신산업 분야와의 연계를 통해 융합적 사고력과 문제 해결 관점을 기른다.",
+    "keywords": [
+      "소프트웨어융합",
+      "신산업",
+      "문제해결",
+      "사례",
+      "융합사고"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "디자인적사고",
+    "code": "SWCON103",
+    "credit": 3,
+    "year": 1,
+    "semester": [
+      1,
+      2
+    ],
+    "category": "전공필수",
+    "department": "소프트웨어융합학과",
+    "description": "문제 해결을 위한 창의적 사고방식과 디자인 기반 문제 분석 및 아이디어 도출 기법을 실습 중심으로 학습한다.",
+    "keywords": [
+      "디자인사고",
+      "문제해결",
+      "아이디어",
+      "창의성",
+      "사고력"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "웹/파이선프로그래밍",
+    "code": "SWCON104",
+    "credit": 3,
+    "year": 1,
+    "semester": [
+      1,
+      2
+    ],
+    "category": "전공필수",
+    "department": "소프트웨어융합학과",
+    "description": "웹 프로그래밍과 파이썬 언어의 기초 문법, 데이터 처리, 간단한 웹 애플리케이션 개발 등을 실습 중심으로 학습한다.",
+    "keywords": [
+      "웹개발",
+      "파이썬",
+      "프로그래밍",
+      "실습",
+      "데이터처리"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "오픈소스SW개발방법및도구",
+    "code": "SWCON201",
+    "credit": 3,
+    "year": 2,
+    "semester": [
+      1
+    ],
+    "category": "전공필수",
+    "department": "소프트웨어융합학과",
+    "description": "오픈소스 소프트웨어의 개념과 개발 방법론, 협업 도구(Git 등)의 활용법을 학습하고 실무 적용 역량을 강화한다.",
+    "keywords": [
+      "오픈소스",
+      "버전관리",
+      "협업",
+      "개발방법론",
+      "Git"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "최신기술콜로키움2",
+    "code": "SWCON302",
+    "credit": 2,
+    "year": 2,
+    "semester": [
+      1
+    ],
+    "category": "전공필수",
+    "department": "소프트웨어융합학과",
+    "description": "SW산업의 최신 기술, 실무 적용 사례 등을 전문가 강연을 통해 학습하며 창의적 사고와 실무 감각을 기른다.",
+    "keywords": [
+      "산업기술",
+      "트렌드",
+      "강연",
+      "창의성",
+      "실무"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "소프트웨어융합캡스톤디자인",
+    "code": "SWCON401",
+    "credit": 3,
+    "year": 4,
+    "semester": [
+      1,
+      2
+    ],
+    "category": "전공필수",
+    "department": "소프트웨어융합학과",
+    "description": "융합 프로젝트를 수행하며 다양한 전공 지식을 통합해 소프트웨어 기반 솔루션을 설계하고 구현한다.",
+    "keywords": [
+      "캡스톤",
+      "융합",
+      "문제해결",
+      "설계",
+      "프로그래밍"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "졸업논문(소프트웨어융합)",
+    "code": "SWCON402",
+    "credit": 0,
+    "year": null,
+    "semester": [
+      1,
+      2
+    ],
+    "category": "전공필수",
+    "department": "소프트웨어융합학과",
+    "description": "졸업 요건 충족을 위한 최종 프로젝트 및 논문 작성 수행. 소프트웨어 융합 분야의 문제 해결 및 발표 능력을 평가한다.",
+    "keywords": [
+      "졸업논문",
+      "프로젝트",
+      "소프트웨어융합",
+      "문제해결",
+      "보고서"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "이산구조",
+    "code": "CSE201",
+    "credit": 3,
+    "year": 2,
+    "semester": [
+      1,
+      2
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "논리, 집합, 관계, 그래프, 트리 등 컴퓨터공학의 이론적 기반이 되는 이산수학 개념을 학습한다.",
+    "keywords": [
+      "이산수학",
+      "논리",
+      "그래프",
+      "트리",
+      "집합"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "컴퓨터네트워크",
+    "code": "CSE302",
+    "credit": 3,
+    "year": 3,
+    "semester": [
+      1,
+      2
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "OSI 7계층과 인터넷 프로토콜을 중심으로 네트워크 구조, 데이터 전송, 라우팅 및 보안 개념을 학습한다.",
+    "keywords": [
+      "네트워크",
+      "OSI",
+      "TCP/IP",
+      "라우팅",
+      "보안"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "SW스타트업비지니스",
+    "code": "CSE330",
+    "credit": 3,
+    "year": 3,
+    "semester": [
+      1
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "소프트웨어 창업에 필요한 아이디어 기획, 시장 조사, 비즈니스 모델 설계 등을 학습한다.",
+    "keywords": [
+      "스타트업",
+      "비즈니스모델",
+      "기획",
+      "창업",
+      "SW비즈니스"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "딥러닝",
+    "code": "CSE331",
+    "credit": 3,
+    "year": 3,
+    "semester": [
+      1,
+      2
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "신경망, CNN, RNN 등의 딥러닝 구조와 학습 방법을 배우고, 실습을 통해 응용 능력을 기른다.",
+    "keywords": [
+      "딥러닝",
+      "신경망",
+      "CNN",
+      "RNN",
+      "머신러닝"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "리눅스시스템프로그래밍",
+    "code": "CSE332",
+    "credit": 3,
+    "year": 3,
+    "semester": [
+      1
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "리눅스 운영체제 환경에서 시스템 콜, 프로세스, 파일처리 등의 시스템 프로그래밍 기법을 학습한다.",
+    "keywords": [
+      "리눅스",
+      "시스템콜",
+      "프로세스",
+      "파일처리",
+      "시스템프로그래밍"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "클라우드컴퓨팅",
+    "code": "CSE335",
+    "credit": 3,
+    "year": 3,
+    "semester": [
+      1
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "클라우드 서비스 모델(IaaS, PaaS, SaaS)과 가상화, 분산 컴퓨팅의 개념과 실습을 병행하여 학습한다.",
+    "keywords": [
+      "클라우드",
+      "가상화",
+      "분산시스템",
+      "IaaS",
+      "PaaS"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "실전기계학습",
+    "code": "CSE340",
+    "credit": 3,
+    "year": 4,
+    "semester": [
+      1,
+      2
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "기계학습 이론을 기반으로 다양한 데이터셋을 활용한 실전 프로젝트를 수행한다.",
+    "keywords": [
+      "기계학습",
+      "데이터",
+      "실습",
+      "머신러닝",
+      "프로젝트"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "정보보호",
+    "code": "CSE423",
+    "credit": 3,
+    "year": 4,
+    "semester": [
+      1
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "암호화, 인증, 접근 제어 등 정보 보안을 위한 핵심 기술과 시스템 보안의 원리를 학습한다.",
+    "keywords": [
+      "정보보호",
+      "암호화",
+      "보안정책",
+      "인증",
+      "시스템보안"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "영상처리",
+    "code": "CSE426",
+    "credit": 3,
+    "year": 4,
+    "semester": [
+      1
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "디지털 영상의 처리 기법, 필터링, 에지 검출 등 컴퓨터 비전의 기초 개념을 학습한다.",
+    "keywords": [
+      "영상처리",
+      "필터링",
+      "엣지검출",
+      "컴퓨터비전",
+      "이미지"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "빅데이터프로그래밍",
+    "code": "CSE434",
+    "credit": 3,
+    "year": 3,
+    "semester": [
+      1
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "대용량 데이터의 처리와 분석을 위한 프로그래밍 기술 및 도구(Spark 등)를 실습 중심으로 학습한다.",
+    "keywords": [
+      "빅데이터",
+      "Spark",
+      "분석",
+      "데이터처리",
+      "프로그래밍"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "AIoT소프트웨어",
+    "code": "CSE440",
+    "credit": 3,
+    "year": 4,
+    "semester": [
+      1
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "인공지능 기반의 사물인터넷 소프트웨어 구조와 통신 방식, 데이터 처리 기술을 학습하고 실습을 통해 구현 능력을 기른다.",
+    "keywords": [
+      "AIoT",
+      "사물인터넷",
+      "인공지능",
+      "소프트웨어",
+      "데이터처리"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "컴퓨터비젼",
+    "code": "CSE441",
+    "credit": 3,
+    "year": 4,
+    "semester": [
+      1
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "디지털 영상에서 유의미한 정보를 추출하고 해석하는 컴퓨터 비전의 기초 이론과 객체 인식, 추적 알고리즘을 학습한다.",
+    "keywords": [
+      "컴퓨터비전",
+      "영상처리",
+      "객체인식",
+      "머신러닝",
+      "딥러닝"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "블록체인",
+    "code": "CES442",
+    "credit": 3,
+    "year": 4,
+    "semester": [
+      1
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "블록체인의 구조, 스마트 계약, 분산원장 기술 등을 이해하고, 보안성과 투명성을 활용한 응용 사례를 학습한다.",
+    "keywords": [
+      "블록체인",
+      "스마트계약",
+      "분산원장",
+      "보안",
+      "탈중앙화"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "모바일/웹서비스프로그래밍",
+    "code": "CSE450",
+    "credit": 3,
+    "year": 4,
+    "semester": [
+      1
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "모바일 및 웹 애플리케이션 개발을 위한 프론트엔드와 백엔드 기술, API 활용 및 사용자 인터페이스 설계를 학습한다.",
+    "keywords": [
+      "모바일앱",
+      "웹개발",
+      "프론트엔드",
+      "백엔드",
+      "API"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "로봇제어공학",
+    "code": "EE461",
+    "credit": 3,
+    "year": 4,
+    "semester": [
+      1
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "로봇 시스템의 제어 이론과 센서 및 액추에이터 활용, 실시간 제어 알고리즘을 다룬다.",
+    "keywords": [
+      "로봇공학",
+      "제어",
+      "센서",
+      "실시간",
+      "메카트로닉스"
+    ],
+    "prerequisite": "자동제어",
+    "track": ""
+  },
+  {
+    "name": "세계신화읽기",
+    "code": "ELC281",
+    "credit": 3,
+    "year": 2,
+    "semester": [
+      1
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "세계 여러 문화권의 신화를 비교 분석하며 상징, 구조, 인간 이해에 대해 탐구한다.",
+    "keywords": [
+      "신화",
+      "문화",
+      "상징",
+      "인문학",
+      "스토리텔링"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "테크놀로지와디지털콘텐츠",
+    "code": "ELC471",
+    "credit": 3,
+    "year": 4,
+    "semester": [
+      1
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "디지털 콘텐츠 제작 기술과 다양한 디지털 미디어 기술의 발전 흐름, 사회적 영향에 대해 학습한다.",
+    "keywords": [
+      "디지털콘텐츠",
+      "미디어",
+      "기술",
+      "제작",
+      "사회변화"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "UX디자인",
+    "code": "ID3012",
+    "credit": 3,
+    "year": 3,
+    "semester": [
+      1
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "사용자 중심 설계를 기반으로 한 UX 이론, 프로토타이핑, 사용자 테스트 등 디자인 프로세스를 실습 중심으로 학습한다.",
+    "keywords": [
+      "UX디자인",
+      "사용자경험",
+      "인터페이스",
+      "프로토타입",
+      "디자인사고"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "응용통계학",
+    "code": "IE208",
+    "credit": 3,
+    "year": 1,
+    "semester": [
+      2
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "응용통계 기법을 활용하여 데이터 분석과 의사결정 문제를 해결하는 능력을 기른다.",
+    "keywords": [
+      "통계",
+      "데이터분석",
+      "의사결정",
+      "회귀분석",
+      "가설검정"
+    ],
+    "prerequisite": "",
+    "track": "데이터사이언스"
+  },
+  {
+    "name": "데이터사이언스",
+    "code": "IE215",
+    "credit": 3,
+    "year": 2,
+    "semester": [
+      1,
+      2
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "데이터 수집, 처리, 분석 및 시각화 방법을 배우고 실제 데이터 기반 의사결정 역량을 기른다.",
+    "keywords": [
+      "데이터",
+      "분석",
+      "시각화",
+      "통계",
+      "의사결정"
+    ],
+    "prerequisite": "웹/파이선프로그래밍",
+    "track": "데이터사이언스"
+  },
+  {
+    "name": "경영과학1",
+    "code": "IE301",
+    "credit": 3,
+    "year": 1,
+    "semester": [
+      2
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "운영문제 해결을 위한 선형계획법 등 수리적 기법을 학습하고 경영의사결정에 활용한다.",
+    "keywords": [
+      "경영",
+      "선형계획",
+      "모델링",
+      "최적화",
+      "의사결정"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "경영과학2",
+    "code": "IE302",
+    "credit": 3,
+    "year": 3,
+    "semester": [
+      2
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "대기이론, 시뮬레이션, 정수계획 등 경영문제에 대한 다양한 분석 도구를 학습한다.",
+    "keywords": [
+      "경영과학",
+      "시뮬레이션",
+      "정수계획",
+      "모델링",
+      "분석"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "데이터마이닝",
+    "code": "IE306",
+    "credit": 3,
+    "year": 3,
+    "semester": [
+      1,
+      2
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "대규모 데이터에서 패턴을 발견하고 예측 모델을 설계하는 데이터 마이닝 기술을 배운다.",
+    "keywords": [
+      "데이터마이닝",
+      "분류",
+      "클러스터링",
+      "패턴발견",
+      "예측"
+    ],
+    "prerequisite": "데이터사이언스",
+    "track": ""
+  },
+  {
+    "name": "금융공학",
+    "code": "IE329",
+    "credit": 3,
+    "year": 3,
+    "semester": [
+      2
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "파생상품, 리스크 관리 등 금융 이론과 수학적 모델링을 기반으로 분석 능력을 기른다.",
+    "keywords": [
+      "금융",
+      "리스크",
+      "파생상품",
+      "수리모델",
+      "투자"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "서비스데이터사이언스�",
+    "code": "IE419",
+    "credit": 3,
+    "year": 4,
+    "semester": [
+      2
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "서비스 산업 데이터를 분석하여 사용자 행동과 운영 전략을 설계하는 기법을 학습한다.",
+    "keywords": [
+      "서비스",
+      "데이터분석",
+      "사용자",
+      "전략",
+      "경영"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "동역학�",
+    "code": "ME271",
+    "credit": 3,
+    "year": 2,
+    "semester": [
+      2
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "물체의 운동과 힘에 대한 이론을 학습하고 공학적 해석 능력을 기른다.",
+    "keywords": [
+      "운동",
+      "힘",
+      "동역학",
+      "뉴턴법칙",
+      "공학"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "메카트로닉스�",
+    "code": "ME375",
+    "credit": 3,
+    "year": 3,
+    "semester": [
+      2
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "기계, 전자, 소프트웨어 요소를 통합한 메카트로닉스 시스템을 설계하고 제어 기법을 학습한다.",
+    "keywords": [
+      "메카트로닉스",
+      "센서",
+      "제어",
+      "시스템",
+      "융합"
+    ],
+    "prerequisite": [
+      "회로와신호",
+      "동역학"
+    ],
+    "track": ""
+  },
+  {
+    "name": "자동제어",
+    "code": "ME376",
+    "credit": 3,
+    "year": 1,
+    "semester": [
+      2
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "피드백 제어 시스템의 이론과 설계를 바탕으로 시스템 안정성과 응답 특성을 분석한다.",
+    "keywords": [
+      "제어",
+      "피드백",
+      "시스템",
+      "안정성",
+      "응답"
+    ],
+    "prerequisite": [
+      "메카트로닉스",
+      "시스템동역학"
+    ],
+    "track": ""
+  },
+  {
+    "name": "시스템동역학",
+    "code": "ME380",
+    "credit": 3,
+    "year": 1,
+    "semester": [
+      2
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "시스템 모델링과 시뮬레이션 기법을 통해 복잡한 공학 시스템의 동작을 분석한다.",
+    "keywords": [
+      "시스템",
+      "동역학",
+      "모델링",
+      "시뮬레이션",
+      "공학"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "로봇공학",
+    "code": "ME391",
+    "credit": 3,
+    "year": 3,
+    "semester": [
+      2
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "로봇의 구조, 센서, 제어 알고리즘을 배우고 다양한 응용 분야를 탐색한다.",
+    "keywords": [
+      "로봇",
+      "센서",
+      "제어",
+      "알고리즘",
+      "자동화"
+    ],
+    "prerequisite": "동역학",
+    "track": ""
+  },
+  {
+    "name": "수치해석프로그래밍",
+    "code": "SWCON207",
+    "credit": 3,
+    "year": 1,
+    "semester": [
+      1,
+      2
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "수치 해석의 기본 개념을 이해하고, 이를 바탕으로 다양한 수치 계산 알고리즘을 프로그래밍으로 구현한다.",
+    "keywords": [
+      "수치해석",
+      "알고리즘",
+      "근사해",
+      "오차분석",
+      "프로그래밍"
+    ],
+    "prerequisite": "객체지향프로그래밍",
+    "track": "로봇비전"
+  },
+  {
+    "name": "게임프로그래밍입문",
+    "code": "SWCON211",
+    "credit": 3,
+    "year": 2,
+    "semester": [
+      1,
+      2
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "게임 개발의 기초 개념과 게임 루프, 이벤트 처리, 그래픽 렌더링 등의 기법을 학습한다.",
+    "keywords": [
+      "게임",
+      "프로그래밍",
+      "렌더링",
+      "이벤트처리",
+      "기초"
+    ],
+    "prerequisite": "",
+    "track": "게임콘텐츠"
+  },
+  {
+    "name": "게임엔진기초",
+    "code": "SWCON212",
+    "credit": 3,
+    "year": 2,
+    "semester": [
+      1,
+      2
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "게임엔진의 구조와 동작 원리를 이해하고, 물리엔진, 애니메이션, 렌더링 기술 등을 학습한다.",
+    "keywords": [
+      "게임엔진",
+      "렌더링",
+      "애니메이션",
+      "물리엔진",
+      "구조"
+    ],
+    "prerequisite": "",
+    "track": "게임콘텐츠"
+  },
+  {
+    "name": "마이크로서비스프로그래밍",
+    "code": "SWCON221",
+    "credit": 3,
+    "year": 2,
+    "semester": [
+      1
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "마이크로서비스 아키텍처 설계, REST API, 서비스 간 통신 및 배포 기술을 실습 중심으로 학습한다.",
+    "keywords": [
+      "마이크로서비스",
+      "API",
+      "분산시스템",
+      "컨테이너",
+      "REST"
+    ],
+    "prerequisite": "",
+    "track": "데이터사이언스"
+  },
+  {
+    "name": "기계학습",
+    "code": "SWCON253",
+    "credit": 3,
+    "year": 1,
+    "semester": [
+      1
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "지도학습과 비지도학습, 분류 및 회귀 알고리즘 등 기계학습의 주요 기법과 응용 사례를 학습한다.",
+    "keywords": [
+      "기계학습",
+      "지도학습",
+      "분류",
+      "회귀",
+      "머신러닝"
+    ],
+    "prerequisite": "",
+    "track": "데이터사이언스스"
+  },
+  {
+    "name": "회로와신호",
+    "code": "SWCON254",
+    "credit": 3,
+    "year": 2,
+    "semester": [
+      1,
+      2
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "기초적인 전기회로 이론과 신호의 성질, 주파수 해석을 학습하여 디지털 시스템 이해의 기반을 마련한다.",
+    "keywords": [
+      "회로",
+      "신호",
+      "주파수해석",
+      "디지털",
+      "전기전자"
+    ],
+    "prerequisite": "",
+    "track": "로봇비전"
+  },
+  {
+    "name": "게임그래픽프로그래밍",
+    "code": "SWCON311",
+    "credit": 3,
+    "year": 2,
+    "semester": [
+      1,
+      2
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "게임에서의 2D/3D 그래픽 처리 기법과 셰이더, 모델링 기술 등을 학습한다.",
+    "keywords": [
+      "게임그래픽",
+      "셰이더",
+      "모델링",
+      "렌더링",
+      "3D"
+    ],
+    "prerequisite": "",
+    "track": "게임콘텐츠"
+  },
+  {
+    "name": "게임인터랙티브테크놀로지",
+    "code": "SWCON312",
+    "credit": 3,
+    "year": 1,
+    "semester": [
+      1,
+      2
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "게임에서 사용자와의 상호작용을 위한 센서 입력, 피드백, 인터페이스 기술을 학습한다.",
+    "keywords": [
+      "게임",
+      "인터랙션",
+      "센서",
+      "UI",
+      "입출력"
+    ],
+    "prerequisite": "",
+    "track": "게임콘텐츠"
+  },
+  {
+    "name": "가상/증강현실이론및실습",
+    "code": "SWCON313",
+    "credit": 3,
+    "year": 1,
+    "semester": [
+      1,
+      2
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "VR/AR 시스템의 이론과 기초 기술을 익히고, 이를 활용한 콘텐츠를 실습한다.",
+    "keywords": [
+      "VR",
+      "AR",
+      "혼합현실",
+      "실습",
+      "공간인터랙션"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "게임공학",
+    "code": "SWCON314",
+    "credit": 3,
+    "year": 2,
+    "semester": [
+      1,
+      2
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "게임 개발에 필요한 수학, 물리, 논리구조 등 공학적 지식을 기반으로 게임 엔진 활용 능력을 기른다.",
+    "keywords": [
+      "게임",
+      "수학",
+      "물리",
+      "게임엔진",
+      "공학"
+    ],
+    "prerequisite": "게임엔진기초",
+    "track": "게임콘텐츠"
+  },
+  {
+    "name": "데이터분석캡스톤디자인",
+    "code": "SWCON321",
+    "credit": 3,
+    "year": 2,
+    "semester": [
+      1
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "데이터 분석 프로젝트를 수행하며 데이터 수집, 처리, 시각화, 모델링을 통합적으로 학습한다.",
+    "keywords": [
+      "캡스톤",
+      "데이터분석",
+      "모델링",
+      "시각화",
+      "프로젝트"
+    ],
+    "prerequisite": "",
+    "track": "데이터사이언스"
+  },
+  {
+    "name": "고급데이터마이닝",
+    "code": "SWCON322",
+    "credit": 3,
+    "year": 3,
+    "semester": [
+      1,
+      2
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "데이터마이닝의 고급 기법과 실제 사례 중심의 실습을 통해 분석 역량을 심화한다.",
+    "keywords": [
+      "데이터마이닝",
+      "고급기법",
+      "실습",
+      "분석",
+      "예측"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "로봇프로그래밍",
+    "code": "SWCON331",
+    "credit": 3,
+    "year": 3,
+    "semester": [
+      1,
+      2
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "로봇 제어를 위한 센서, 액추에이터 제어 기술과 ROS 기반 프로그래밍을 실습한다.",
+    "keywords": [
+      "로봇",
+      "ROS",
+      "센서",
+      "액추에이터",
+      "제어"
+    ],
+    "prerequisite": "",
+    "track": "로봇비전"
+  },
+  {
+    "name": "로봇･비전캡스톤디자인",
+    "code": "SWCON332",
+    "credit": 3,
+    "year": 2,
+    "semester": [
+      1
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "로봇과 컴퓨터 비전 기술을 융합한 프로젝트를 통해 문제해결 및 설계 능력을 기른다.",
+    "keywords": [
+      "로봇",
+      "비전",
+      "캡스톤",
+      "문제해결",
+      "설계"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "3D데이터처리",
+    "code": "SWCON366",
+    "credit": 3,
+    "year": 3,
+    "semester": [
+      1,
+      2
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "3D 센서 데이터를 수집하고 전처리 및 분석하여 공간 정보를 활용한 응용을 학습한다.",
+    "keywords": [
+      "3D",
+      "데이터",
+      "공간정보",
+      "센서",
+      "처리"
+    ],
+    "prerequisite": "",
+    "track": "로봇비전"
+  },
+  {
+    "name": "게임콘텐츠캡스톤디자인",
+    "code": "SWCON367",
+    "credit": 3,
+    "year": 2,
+    "semester": [
+      1
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "게임 콘텐츠 개발 프로젝트를 수행하며 기획, 디자인, 구현 과정을 통합적으로 학습한다.",
+    "keywords": [
+      "게임",
+      "콘텐츠",
+      "캡스톤",
+      "기획",
+      "구현"
+    ],
+    "prerequisite": "",
+    "track": "게임콘텐츠"
+  },
+  {
+    "name": "풀스택서비스프로그래밍�",
+    "code": "SWCON370",
+    "credit": 3,
+    "year": 2,
+    "semester": [
+      1,
+      2
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "프론트엔드부터 백엔드까지 웹 서비스의 전체 개발 과정을 실습하며 실무 역량을 기른다.",
+    "keywords": [
+      "풀스택",
+      "웹",
+      "프론트엔드",
+      "백엔드",
+      "서비스"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "디자인프로그래밍",
+    "code": "SWCON371",
+    "credit": 3,
+    "year": 3,
+    "semester": [
+      1,
+      2
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "시각적 디자인 원리와 프로그래밍을 결합하여 창의적인 디지털 콘텐츠를 개발한다.",
+    "keywords": [
+      "디자인",
+      "프로그래밍",
+      "시각화",
+      "UI",
+      "창의성"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "응용데이터분석",
+    "code": "SWCON372",
+    "credit": 3,
+    "year": 3,
+    "semester": [
+      1,
+      2
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "실제 데이터를 기반으로 분석 모델을 수립하고, 다양한 도메인에 적용하는 실습을 진행한다.",
+    "keywords": [
+      "데이터분석",
+      "응용",
+      "실습",
+      "도메인",
+      "모델링"
+    ],
+    "prerequisite": "",
+    "track": "데이터사이언스"
+  },
+  {
+    "name": "프로세스마이닝",
+    "code": "SWCON423",
+    "credit": 3,
+    "year": 4,
+    "semester": [
+      1,
+      2
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "업무 프로세스의 로그 데이터를 기반으로 프로세스를 분석, 시각화하고 개선안을 도출한다.",
+    "keywords": [
+      "프로세스",
+      "마이닝",
+      "로그",
+      "시각화",
+      "개선"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "융합연구1※2)",
+    "code": "SWCON241",
+    "credit": 1,
+    "year": 2,
+    "semester": [
+      1
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "융합 기술 주제를 중심으로 한 기초 연구 활동 수행을 통해 문제해결과 탐구 역량을 기른다.",
+    "keywords": [
+      "융합",
+      "연구",
+      "기초탐구",
+      "문제해결",
+      "실습"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "융합연구2※2)",
+    "code": "SWCON242",
+    "credit": 1,
+    "year": 2,
+    "semester": [
+      1
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "융합 기술에 대한 심화 조사와 토론 중심 활동을 통해 융합 사고력과 협업 역량을 강화한다.",
+    "keywords": [
+      "융합",
+      "조사",
+      "토론",
+      "협업",
+      "탐구"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "융합연구3※2)",
+    "code": "SWCON341",
+    "credit": 1,
+    "year": 3,
+    "semester": [
+      1
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "학생 주도의 융합 연구 과제를 기획하고 실험 및 발표를 통해 연구 프로세스를 체득한다.",
+    "keywords": [
+      "융합",
+      "과제기획",
+      "실험",
+      "발표",
+      "연구"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "융합연구4※2)",
+    "code": "SWCON342",
+    "credit": 1,
+    "year": 3,
+    "semester": [
+      1
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "융합연구 프로젝트 결과를 종합하고 보고서를 작성하여 종합적 문제 해결 역량을 기른다.",
+    "keywords": [
+      "융합",
+      "프로젝트",
+      "보고서",
+      "종합역량",
+      "문제해결"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "독립심화학습",
+    "code": "SWCON363",
+    "credit": 3,
+    "year": 3,
+    "semester": [
+      1
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "학생이 주도적으로 주제를 정하고 심화 학습 및 산출물을 통해 자기주도 역량을 강화한다.",
+    "keywords": [
+      "자기주도",
+      "심화학습",
+      "탐구",
+      "프로젝트",
+      "학습역량"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "프로젝트심화",
+    "code": "SWCON364",
+    "credit": 3,
+    "year": 3,
+    "semester": [
+      1
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "실제 문제를 해결하기 위한 팀 기반 프로젝트를 수행하며 실무 역량과 응용 능력을 강화한다.",
+    "keywords": [
+      "프로젝트",
+      "팀워크",
+      "문제해결",
+      "응용",
+      "실무역량"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "강화학습",
+    "code": "SWCON495",
+    "credit": 3,
+    "year": null,
+    "semester": [
+      1,
+      2
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "강화학습의 기초 이론인 마르코프 결정과정, 벨만 방정식 등을 학습하고, 심층 강화학습 알고리즘을 시뮬레이션 환경에서 구현한다.",
+    "keywords": [
+      "강화학습",
+      "딥러닝",
+      "정책학습",
+      "가치함수",
+      "시뮬레이션"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "창업현장실습",
+    "code": "*1)",
+    "credit": 3,
+    "year": 2,
+    "semester": [
+      1,
+      2
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "학생들이 실제 창업 환경에 참여하여 창업 과정을 경험하고, 실전 비즈니스 역량과 창의적 문제 해결 능력을 기른다.",
+    "keywords": [
+      "창업",
+      "현장실습",
+      "비즈니스",
+      "문제해결",
+      "경험"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "단기현장실습",
+    "code": "*1)",
+    "credit": 3,
+    "year": 2,
+    "semester": [
+      1,
+      2
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "관련 산업체에서 단기간의 실무 경험을 통해 전공지식을 실제에 적용하고 현장 적응력을 향상시킨다.",
+    "keywords": [
+      "현장실습",
+      "단기",
+      "실무",
+      "적용",
+      "경험"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "장기현장실습",
+    "code": "*1)",
+    "credit": 9,
+    "year": 2,
+    "semester": [
+      1,
+      2
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "관련 산업체에서 장기간 실무 경험을 통해 전공 이론을 현장에 응용하고 실무 역량을 강화한다.",
+    "keywords": [
+      "현장실습",
+      "장기",
+      "응용",
+      "경험",
+      "산업체"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "풀스택서비스프로그래밍",
+    "code": "SWCON370",
+    "credit": 3,
+    "year": 3,
+    "semester": [
+      1
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "프론트엔드부터 백엔드까지 웹 서비스의 전체 개발 과정을 실습하며 실무 역량을 기른다.",
+    "keywords": [
+      "풀스택",
+      "웹",
+      "프론트엔드",
+      "백엔드",
+      "서비스"
+    ],
+    "prerequisite": "",
+    "track": ""
+  },
+  {
+    "name": "인공지능과게임프로그래밍",
+    "code": "SWCON491",
+    "credit": 3,
+    "year": 3,
+    "semester": [
+      1
+    ],
+    "category": "전공선택",
+    "department": "소프트웨어융합학과",
+    "description": "게임 개발에 인공지능 기법을 적용하여 캐릭터 행동 제어, 경로 탐색, 게임 난이도 조절 등을 구현한다.",
+    "keywords": [
+      "인공지능",
+      "게임",
+      "AI",
+      "경로탐색",
+      "난이도조절"
+    ],
+    "prerequisite": "객체지향프로그래밍",
+    "track": "게임콘텐츠"
+  }
+]

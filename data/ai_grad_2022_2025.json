@@ -1,0 +1,70 @@
+{
+  "인공지능학과2022": {
+    "total_credits": 130,
+    "major_credits_required": 81,
+    "foundation_credits": 12,
+    "major_required_credits": 42,
+    "major_elective_credits": 27,
+    "industry_required_credits": 12,
+    "required_courses": [
+      "캡스톤디자인",
+      "졸업프로젝트",
+      "졸업논문(인공지능학과)"
+    ],
+    "english_required": {
+      "regular": 3,
+      "transfer": 1
+    }
+  },
+  "인공지능학과2023": {
+    "total_credits": 130,
+    "major_credits_required": 81,
+    "foundation_credits": 12,
+    "major_required_credits": 42,
+    "major_elective_credits": 27,
+    "industry_required_credits": 12,
+    "required_courses": [
+      "캡스톤디자인",
+      "졸업프로젝트",
+      "졸업논문(인공지능학과)"
+    ],
+    "english_required": {
+      "regular": 3,
+      "transfer": 1
+    }
+  },
+  "인공지능학과2024": {
+    "total_credits": 130,
+    "major_credits_required": 81,
+    "foundation_credits": 12,
+    "major_required_credits": 42,
+    "major_elective_credits": 27,
+    "industry_required_credits": 12,
+    "required_courses": [
+      "캡스톤디자인",
+      "졸업프로젝트",
+      "졸업논문(인공지능학과)"
+    ],
+    "english_required": {
+      "regular": 3,
+      "transfer": 1
+    }
+  },
+  "인공지능학과2025": {
+    "total_credits": 130,
+    "major_credits_required": 81,
+    "foundation_credits": 12,
+    "major_required_credits": 42,
+    "major_elective_credits": 27,
+    "industry_required_credits": 12,
+    "required_courses": [
+      "캡스톤디자인",
+      "졸업프로젝트",
+      "졸업논문(인공지능학과)"
+    ],
+    "english_required": {
+      "regular": 3,
+      "transfer": 1
+    }
+  }
+}

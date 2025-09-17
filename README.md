@@ -1,12 +1,11 @@
 # 🎓 Epic: Edu Path in CS
-
+#### 🔼 제1회 세모톤 최우수상 수상 🔼
 ```
 경희대학교 소프트웨어융합대학 학생들의 효율적인 학업 계획을 지원하기 위한 서비스입니다.
 ```
 
 <img src="https://drive.google.com/uc?id=1-NXfFN6PX0KT_qrLwCdQTcU-c1SZ9qzn" width=60%>
 
-#### 🔼 제1회 세모톤 최우수상 수상 🔼
 
 <br>
 

@@ -53,6 +53,12 @@
 
 <br>
 
+## 🔧 Backend & AI Development
+
+<img src="https://drive.google.com/uc?id=1xLt3xNZIqAiWtt8EKir6KhAwrI-ezfxh" width=70%>
+
+<br>
+
 
 ## ▶️ How to Run
 

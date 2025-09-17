@@ -71,6 +71,10 @@ pip install -r requirements.txt
 ```
 uvicorn main:app --reload
 ```
+```
+BE repository : https://github.com/semothon/2025_TEAM_15_BE
+FE repository : https://github.com/semothon/2025_TEAM_15_FE
+```
 
 <br>
 

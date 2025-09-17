@@ -53,12 +53,6 @@
 
 <br>
 
-## 🔧 Frontend Development
-
-<img src="https://drive.google.com/uc?id=1IWIKrc-pRCDMB3wws-T0hmTtXNfdv_W4" width=65%>
-
-<br>
-
 
 ## ▶️ How to Run
 
@@ -76,6 +70,12 @@ pip install -r requirements.txt
 
 ```
 uvicorn main:app --reload
+```
+```
+BE repository : https://github.com/semothon/2025_TEAM_15_BE
+```
+```
+FE repository : https://github.com/semothon/2025_TEAM_15_FE
 ```
 
 <br>

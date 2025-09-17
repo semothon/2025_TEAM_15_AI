@@ -53,12 +53,6 @@
 
 <br>
 
-## 🔧 Frontend Development
-
-<img src="https://drive.google.com/uc?id=1IWIKrc-pRCDMB3wws-T0hmTtXNfdv_W4" width=65%>
-
-<br>
-
 
 ## ▶️ How to Run
 
